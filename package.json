@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/myers-stevens-toohey/myers-stevens-toohey/issues"
   },
-  "homepage": "https://github.com/myers-stevens-toohey/myers-stevens-toohey#readme"
+  "homepage": "https://github.com/myers-stevens-toohey/myers-stevens-toohey#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "gulp": "^3.9.0"
+  }
 }
