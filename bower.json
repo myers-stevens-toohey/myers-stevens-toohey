@@ -1,0 +1,19 @@
+{
+  "name": "myers-stevens-toohey",
+  "description": "Re-designed myers-stevens-toohey site.",
+  "main": "index.js",
+  "authors": [
+    "Joshua Warnock"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/myers-stevens-toohey/myers-stevens-toohey",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
