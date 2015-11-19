@@ -22,4 +22,4 @@ gulp.task('jshint', function() {
         .pipe(jshint());
 });
 
-gulp.task('default', ['copy-src', 'jshint']);
+gulp.task('default', ['start', 'copy-src', 'jshint']);
