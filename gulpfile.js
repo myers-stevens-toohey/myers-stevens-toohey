@@ -5,6 +5,10 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var jshint = require('gulp-jshint');
 
+gulp.task('watch', function() {
+   gulp.watch('/src/**', ['jshint', 'copy-src']);
+});
+
 gulp.task('start', function() {
    nodemon({
        script: 'server.js',
@@ -18,8 +22,9 @@ gulp.task('copy-src', function() {
 });
 
 gulp.task('jshint', function() {
-    gulp.src(['*.js', 'src/js/**'])
-        .pipe(jshint());
+    return gulp.src('src/js/**')
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('default', ['start', 'copy-src', 'jshint']);
+gulp.task('default', ['start', 'watch', 'copy-src', 'jshint']);
