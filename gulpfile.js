@@ -7,6 +7,7 @@ var jshint = require('gulp-jshint');
 var minHtml = require('gulp-minify-html');
 var minCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
+var wiredep = require('wiredep').stream;
 
 gulp.task('watch', function() {
    gulp.watch('/src/**', ['jshint', 'htmlmin']);
@@ -47,4 +48,12 @@ gulp.task('jshint', function() {
         .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('default', ['jshint', 'minify-html', 'minify-css', 'uglify', 'start', 'watch']);
+gulp.task('bower', function() {
+   return gulp.src('./src/index.html')
+       .pipe(wiredep({
+           directory: './bower_components/'
+       }))
+       .pipe(gulp.dest('./public/'));
+});
+
+gulp.task('default', ['jshint', 'minify-html', 'minify-css', 'uglify', 'start', 'watch', 'bower']);
