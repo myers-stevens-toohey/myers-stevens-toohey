@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Myers-Stevens-Toohey</title>
+    <link href="css/default.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/default.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        
+
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -20,19 +23,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="images/MST%20logo.png"></a>
+            <a id="logo" class="navbar-brand" href="#"><img src="images/MST%20logo.png"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Student Accident Insurance</a></li>
+                        <li><a href="#">Special Risk Group</a></li>
+                        <li><a href="#">Associations</a></li>
+                        <li><a href="#">Employer Employee Benefits</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>
                         <li role="separator" class="divider"></li>
@@ -40,16 +43,10 @@
                     </ul>
                 </li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+
+            <ul class="nav navbar-nav navbar-left">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company</a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -59,9 +56,24 @@
                     </ul>
                 </li>
             </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
+
 </nav>
-<h1>Server is running at http://localhost:3000</h1>
+<h1 id="test">Text goes here!</h1>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</footer>
+
 </body>
 </html>
