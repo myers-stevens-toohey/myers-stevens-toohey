@@ -10,14 +10,19 @@ var uglify = require('gulp-uglify');
 var wiredep = require('wiredep').stream;
 
 gulp.task('watch', function() {
-   gulp.watch('/src/**', ['jshint', 'htmlmin']);
+   gulp.watch('/src/**', ['jshint']);
 });
 
 gulp.task('start', function() {
    nodemon({
        script: 'server.js',
-       ext: 'js html'
+       ext: 'js html css'
    })
+       .on('start', ['watch'])
+       .on('change', ['watch'])
+       .on('restart', function() {
+           console.log('Server Restarted!')
+       });
 });
 
 gulp.task('minify-html', function() {
@@ -56,4 +61,4 @@ gulp.task('bower', function() {
        .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('default', ['jshint', 'minify-html', 'minify-css', 'uglify', 'start', 'watch', 'bower']);
+gulp.task('default', ['minify-html', 'minify-css', 'uglify','jshint', 'watch', 'bower', 'start']);
