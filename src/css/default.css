@@ -1,4 +1,27 @@
-#test{
-    color: #0000ff !important;
-    font-family: Helvetica;
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px; /*Margin for bottom footer*/
+}
+#header{
+    background-color: transparent;
+    border: transparent;
+}
+#logo{
+    height: inherit;
+    padding: inherit;
+}
+#logo-img{
+    height: 50px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
 }
