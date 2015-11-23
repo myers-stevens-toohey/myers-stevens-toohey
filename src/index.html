@@ -12,10 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<nav id="header" class="navbar navbar-default">
+<nav id="header" class="navbar navbar-default"> <!-- Header Begin -->
     <div class="container-fluid">
-
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -25,49 +23,60 @@
             </button>
             <a id="logo" class="navbar-brand" href="#"><img id="logo-img" src="images/myers-stevens-toohey-logo.png"></a>
         </div>
-
-        <div class="collapse navbar-collapse pull-right">
-
-            <ul class="nav navbar-nav header-button">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products & Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Student Accident Insurance</a></li>
-                        <li><a href="#">Special Risk Group</a></li>
-                        <li><a href="#">Associations</a></li>
-                        <li><a href="#">Employer Employee Benefits</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Enrollment Forms</a></li>
-                        <li><a href="#">Claims</a></li>
-                    </ul>
-                </li>
-            </ul>
-
+        <div class="collapse navbar-collapse pull-right"> <!-- MainMenu -->
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Our History</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                    <a href="#productmenu1" class="dropdown-toggle" data-toggle="collapse" data-parent="#header">Products & Services</a>
+                    <ul class="collapse dropdown-submenu" id="productmenu1">
+                        <li class="dropdown-category">
+                            <a href="#productsubmenu1" class="dropdown-toggle" data-toggle="collapse" data-parent="#productsubmenu1">Student Accident <i class="fa fa-caret-down"></i></a>
+                            <ul class="collapse dropdown-subsubmenu" id="productsubmenu1">
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">Accident & Sickness</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">Tackle Football</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">Full-Time 24/7</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">School-Time</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">Dental Accident</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu1">Pharmacy SmartCard</a>
+                            </ul>
+                        </li>
+                        <li class="dropdown-category">
+                            <a href="#productmenu2" class="dropdown-toggle" data-toggle="collapse" data-parent="#productmenu2">Special Risk <i class="fa fa-caret-down"></i></a>
+                            <ul class="collapse dropdown-subsubmenu" id="productmenu2">
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu2">Place Holder 1</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu2">Place Holder 2</a>
+                            </ul>
+                        </li>
+                        <li class="dropdown-category">
+                            <a href="#productmenu3" class="dropdown-toggle" data-toggle="collapse" data-parent="#productmenu3">Associations <i class="fa fa-caret-down"></i></a>
+                            <ul class="collapse dropdown-subsubmenu" id="productmenu3">
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu3">Place Holder 1</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu3">Place Holder 2</a>
+                            </ul>
+                        </li>
+                        <li class="dropdown-category">
+                            <a href="#productmenu4" class="dropdown-toggle" data-toggle="collapse" data-parent="#productmenu4">Employer Employee Benifits <i class="fa fa-caret-down"></i></a>
+                            <ul class="collapse dropdown-subsubmenu" id="productmenu4">
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu4">Place Holder 1</a>
+                                <a class="dropdown-item" href="#" data-parent="#productsubmenu4">Place Holder 2</a>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="#aboutmenu1" class="dropdown-toggle" data-toggle="collapse" data-parent="#header">About Us</a>
+                    <ul class="collapse dropdown-submenu" id="aboutmenu1">
+                        <li class="dropdown-category"><a href="#" class="dropdown-toggle" data-toggle="collapse">Our History</a></li>
+                        <li class="dropdown-category"><a href="#" class="dropdown-toggle" data-toggle="collapse">Our Team</a></li>
+                        <li class="dropdown-category"><a href="#" class="dropdown-toggle" data-toggle="collapse">Careers</a></li>
+                        <li class="dropdown-category"><a href="#" class="dropdown-toggle" data-toggle="collapse">Terms Of Use</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#blogmenu1" class="dropdown-toggle" data-toggle="collapse" data-parent="#header">Blog</a></li>
+                <li class="dropdown"><a href="#blogmenu1" class="dropdown-toggle" data-toggle="collapse" data-parent="#header">Contact Us</a></li>
             </ul>
-
-            <ul class="nav navbar-nav">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-
         </div><!-- /.navbar-collapse -->
-
     </div><!-- /.container-fluid -->
-
-</nav>
-
+</nav> <!-- Header End -->
 <footer class="footer">
     <div class="container">
 

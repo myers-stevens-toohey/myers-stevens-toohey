@@ -24,3 +24,16 @@ body {
     height: 60px;
     background-color: transparent;
 }
+.dropdown-submenu{
+     padding: 0px 0px 0px 20px;
+    /*display: block;*/
+ }
+.dropdown-category{
+    list-style: none;
+}
+.dropdown-subsubmenu{
+    padding: 0px 0px 0px 0px;
+}
+.dropdown-item{
+    display: block;
+}
