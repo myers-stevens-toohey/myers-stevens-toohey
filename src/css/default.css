@@ -1,3 +1,4 @@
+/* Main CSS */
 html {
     position: relative;
     min-height: 100%;
@@ -5,9 +6,14 @@ html {
 body {
     margin-bottom: 60px; /*Margin for bottom footer*/
 }
+/* Header/Menu & Logo */
 #header{
     background-color: transparent;
     border: transparent;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
 }
 #logo{
     height: inherit;
@@ -16,17 +22,6 @@ body {
 #logo-img{
     height: 50px;
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: transparent;
-}
-/*.dropdown{*/
-    /*padding: 0px 15px 0px 15px;*/
-/*}*/
 .menu-button{
     font-size: 16px;
     font-weight: bold;
@@ -44,4 +39,17 @@ body {
 .dropdown-item{
     display: block;
     font-size: 12px;
+}
+/* Carousel */
+.carousel-image{
+    width: 100%;
+}
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: transparent;
 }
