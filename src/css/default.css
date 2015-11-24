@@ -24,9 +24,16 @@ body {
     height: 60px;
     background-color: transparent;
 }
+/*.dropdown{*/
+    /*padding: 0px 15px 0px 15px;*/
+/*}*/
+.menu-button{
+    font-size: 16px;
+    font-weight: bold;
+}
 .dropdown-submenu{
      padding: 0px 0px 0px 20px;
-    /*display: block;*/
+    font-size: 12px;
  }
 .dropdown-category{
     list-style: none;
@@ -36,4 +43,5 @@ body {
 }
 .dropdown-item{
     display: block;
+    font-size: 12px;
 }
