@@ -1,1 +1,1 @@
-#test{color:#00f!important;font-family:Helvetica}
+html{position:relative;min-height:100%}#header,.footer{position:absolute;width:100%;background-color:transparent}body{margin-bottom:60px}#header{border:transparent;margin-bottom:0;z-index:9999}#logo{height:inherit;padding:inherit}#logo-img{height:50px}.menu-button{font-size:16px;font-weight:700}.dropdown-submenu{padding:0 0 0 20px;font-size:12px}.dropdown-category{list-style:none}.dropdown-subsubmenu{padding:0}.dropdown-item{display:block;font-size:12px}.carousel-image{width:100%}.footer{bottom:0;height:60px}

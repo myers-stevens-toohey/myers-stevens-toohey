@@ -1,13 +1,18 @@
+@media screen and (max-width: 821px) {
+    #logo-img{
+    display: none;
+    }
+}
 /* Main CSS */
-html {
+html{
     position: relative;
     min-height: 100%;
 }
-body {
+body{
     margin-bottom: 60px; /*Margin for bottom footer*/
 }
 /* Header/Menu & Logo */
-#header{
+#header {
     background-color: transparent;
     border: transparent;
     margin-bottom: 0px;
@@ -15,34 +20,53 @@ body {
     z-index: 9999;
     width: 100%;
 }
-#logo{
+#logo {
     height: inherit;
     padding: inherit;
 }
-#logo-img{
+#logo-img {
     height: 50px;
+    }
+
+#mst-text {
+    display: block;
+    width: 310px;
+    color: #eeeeee;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-.menu-button{
+.menu-button {
     font-size: 16px;
     font-weight: bold;
+    color: #eeeeee !important;
 }
-.dropdown-submenu{
+.dropdown-submenu {
      padding: 0px 0px 0px 20px;
     font-size: 12px;
  }
 .dropdown-category{
     list-style: none;
 }
-.dropdown-subsubmenu{
+.dropdown-category a {
+    color: #eeeeee;
+}
+.dropdown-category a:hover {
+    color: #eeeeee;
+}
+.dropdown-subsubmenu {
     padding: 0px 0px 0px 0px;
 }
-.dropdown-item{
+.dropdown-item {
     display: block;
     font-size: 12px;
 }
 /* Carousel */
-.carousel-image{
+.carousel-image {
     width: 100%;
+}
+.jumbotron {
+    margin: 0px 0px 0px 0px !important;
 }
 /* Footer */
 .footer {
@@ -52,4 +76,17 @@ body {
     /* Set the fixed height of the footer here */
     height: 60px;
     background-color: transparent;
+}
+#footer-container {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    background-color: #0f0f0f;;
+}
+.footer-menu {
+    list-style: none;
+    text-decoration: none;
+    color: #eeeeee;
+}
+.footer-menu li a {
+    color: #eeeeee;
 }

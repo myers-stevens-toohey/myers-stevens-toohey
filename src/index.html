@@ -17,15 +17,15 @@
 <nav id="header" class="navbar navbar-default"> <!-- Header Begin -->
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="logo" class="navbar-brand" href="#"><img id="logo-img" src="images/myers-stevens-toohey-logo.png"></a>
+            <a id="logo" class="navbar-brand" href="#"><img id="logo-img" class="pull-left" src="images/myers-stevens-toohey-logo-icon.png"><span id="mst-text">myers | stevens | toohey</span></a>
         </div>
-        <div class="collapse navbar-collapse pull-right"> <!-- MainMenu -->
+        <div class="collapse navbar-collapse pull-right" id="header-menu"> <!-- MainMenu -->
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#productmenu1" class="dropdown-toggle menu-button" data-toggle="collapse" data-parent="#header">Products & Services</a>
@@ -123,19 +123,64 @@
     </div>
     <!-- Controls -->
     <a class="left carousel-control" href="#landing-carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
     </a>
     <a class="right carousel-control" href="#landing-carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
     </a>
 </div> <!-- Carousel -->
 
-<div>
-
+<div class="jumbotron">
+    <h2 class="text-center">Student Accident Insurance</h2>
+    <h3 class="text-center">School Plans</h3>
+    <p class="text-center">Some of the many plans we offer are tailored specifically for JPAs, school districts,
+        private schools, universities, colleges, and special niche groups. These plans are provided so that our
+        clients can be certain that the proper coverage is in place when it is needed most. Available plans range
+        from field trip coverage to catastrophic accident coverage.</p>
+    <p class="text-center"><a href="#" role="button">Learn more about School Plans</a></p>
+    <h3 class="text-center">Student Plans</h3>
+    <p class="text-center">Many of the plans we offer are available for students starting in pre-school and going
+        through 12th grade with select offerings for college students. Our offerings range from student health &
+        accident plans to prescription drug discounts and even interscholastic tackle football coverage. These plans
+        are made available through our on going relationships with over 20,000 schools in the West.Various levels of
+        coverage are available and eligibility for coverage is determined by the state the applicant resides in and
+        whether or not the applicant’s JPA, school district, private school, university, or college has an existing
+        relationship with Myers-Stevens & Toohey & Co. Inc..</p>
+    <p class="text-center"><a href="#" role="button">Learn more about Student Plans</a></p>
+</div>
+<div class="jumbotron">
+    <h2 class="text-center">Special Risk Group</h2>
+    <p class="text-center">Info on SRG</p>
+    <p class="text-center"><a href="#" role="button">Learn more</a></p>
+</div>
+<div class="jumbotron">
+    <h2 class="text-center">Associations</h2>
+    <p class="text-center">Info on Associations</p>
+    <p class="text-center"><a href="#" role="button">Learn more</a></p>
+</div>
+<div class="jumbotron">
+    <h2 class="text-center">Employer Employee Benefits</h2>
+    <p class="text-center">Info on EEB</p>
+    <p class="text-center"><a href="#" role="button">Learn more</a></p>
 </div>
 
 <footer class="footer">
-    <div class="container">
+    <div id="footer-container" class="container-fluid col-md-12">
+        <div class="col-sm-6 col-md-4">
+            <a id="logo" class="navbar-brand" href="#"><img id="logo-img" class="pull-left" src="images/myers-stevens-toohey-logo-icon.png"><span id="mst-text">myers | stevens | toohey</span></a>
+        </div>
+        <div class="col-sm-6 col-md-8">
+            <ul class="footer-menu">
+                <li><a href="#" class="footer-menu-item">About Us</a></li>
+                <li><a href="#" class="footer-menu-item">Claims</a></li>
+                <li><a href="#" class="footer-menu-item">Enrollment Forms</a></li>
+                <li><a href="#" class="footer-menu-item">Contact</a></li>
+                <li><a href="#" class="footer-menu-item">Careers</a></li>
+                <li><a href="#" class="footer-menu-item">Site Map</a></li>
+                <li><a href="#" class="footer-menu-item">Terms of Use</a></li>
+                <li><a href="#" class="footer-menu-item">Privacy Policy</a></li>
+            </ul>
+        </div>
 
     </div>
 </footer>

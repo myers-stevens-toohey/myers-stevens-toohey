@@ -8,6 +8,8 @@ var minHtml = require('gulp-minify-html');
 var minCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var wiredep = require('wiredep').stream;
+var imagemin = require('imagemin');
+var imageminJpegtran = require('imagemin-jpegtran');
 
 gulp.task('watch', function() {
    gulp.watch('/src/**', ['jshint']);
