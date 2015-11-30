@@ -5,9 +5,9 @@ html {
 }
 body {
     margin-bottom: 60px; /*Margin for bottom footer*/
+    background: ghostwhite !important;
 }
-/************************************************************************/
-/************************************************************************/
+/****************** Navbar Collapse for Devices ************************/
 @media screen
 and (min-device-width: 320px)
 and (max-device-width: 568px)
@@ -95,9 +95,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         padding-bottom: 15px !important;
     }
 }
-/************************************************************************/
-/************************************************************************/
-/* Header/Menu & Logo */
+/***************************** Header/Menu & Logo *****************************/
 #header {
     background-color: transparent;
     border: transparent;
@@ -112,6 +110,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 #logo-img {
     height: 50px;
+    padding: 5px 5px 5px 5px;
 }
 @media only screen
 and (min-device-width: 320px)
@@ -128,6 +127,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media only screen
 and (min-device-width: 320px)
@@ -147,6 +147,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 16px;
     font-weight: bold;
     color: #eeeeee !important;
+    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
 }
 .menu-button:hover {
     font-size: 16px;
@@ -163,10 +164,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
         color: #eeeeee !important;
     }
 }
-.dropdown-submenu {
-     padding: 0px 0px 0px 20px;
-    font-size: 12px;
- }
+.dropdown:hover .dropdown-submenu {
+    display: block;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+}
+.dropdown-submenu a {
+    color: #eeeeee;
+}
+.dropdown-submenu a:hover {
+    color: #865F38;
+    text-decoration: none;
+}
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px)
@@ -192,21 +201,48 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: block;
     font-size: 12px;
 }
-/* Carousel */
+/*************************** Carousel ***************************/
 .carousel-image {
     width: 100%;
 }
+.carousel-caption {
+    margin-bottom: 10%;
+    font-family: Helvetica;
+}
+.carousel-caption h3 {
+    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+}
+.carousel-caption a {
+    text-decoration: none;
+    color: #eeeeee;
+    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+}
+.carousel-caption a:hover {
+    text-decoration: none;
+    color: #865F38;
+}
+.carousel-button {
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px 10px 10px 10px;
+    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+}
+.carousel-button:hover {
+    color: #865F38;
+    text-decoration: none;
+    border: 2px solid #865F38;
+}
+/*************************** Jumbotrons ***************************/
 .jumbotron {
-    margin: 0px 0px 0px 0px !important;
+    margin: 10px 0px 10px 0px !important;
     background-color: ghostwhite !important;
 }
-/* Footer */
+/*************************** Footer ***************************/
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
+    height: 60px; /* Set the fixed height of the footer here */
     background-color: transparent;
 }
 #footer-container {
@@ -233,7 +269,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 .footer-menu li {
     display: table-cell;
-    padding: 0px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
 }
 .footer-menu li a {
     color: #eeeeee;
@@ -254,7 +290,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {
-    .footer-products{
+    .footer-products {
         font-size: 2em;
     }
 }
@@ -273,6 +309,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 .footer-products-cells a {
     color: #eeeeee;
+    padding: 5px 5px 5px 5px;
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .footer-products-cells a {
+        font-size: 2em;
+    }
 }
 .footer-products-cells a:hover {
     color: #865F38;
