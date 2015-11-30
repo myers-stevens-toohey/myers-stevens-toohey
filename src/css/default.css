@@ -221,6 +221,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     text-decoration: none;
     color: #865F38;
 }
+.carousel-span {
+    font-weight: bold;
+}
 .carousel-button {
     padding: 5px 5px 5px 5px;
     border: 2px solid #eeeeee;
