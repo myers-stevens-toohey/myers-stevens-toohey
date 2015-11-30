@@ -11,9 +11,10 @@ app.use(function(req, res, next) {
 });
 
 //app.use(express.static('public'));
-//app.use(express.static('src'));
 app.use(express.static(__dirname + '/src'));
 app.use(express.static(__dirname + '/src/css/default.css'));
+app.use(express.static(__dirname + '/bower_components'));
+app.use(express.static(__dirname + '/node_modules'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/index.html'));
