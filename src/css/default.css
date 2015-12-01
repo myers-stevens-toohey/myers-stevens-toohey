@@ -27,7 +27,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media screen
 and (min-device-width: 320px)
 and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
     .navbar-collapse {
         width: auto !important;
         border-top: 0 !important;
@@ -123,11 +124,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 #mst-text {
     display: block;
     width: 310px;
-    color: #eeeeee;
+    color: #999999;
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media only screen
 and (min-device-width: 320px)
@@ -136,7 +136,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     #mst-text {
         display: block;
         width: 310px;
-        color: #eeeeee;
+        color: #999999;
         font-weight: bold;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -146,8 +146,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .menu-button {
     font-size: 16px;
     font-weight: bold;
-    color: #eeeeee !important;
-    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+    color: #b2b2b2 !important;
+    padding: 15px 20px 15px 20px !important;
 }
 .menu-button:hover {
     font-size: 16px;
@@ -161,7 +161,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .menu-button {
         font-size: 20px;
         font-weight: bold;
-        color: #eeeeee !important;
+        color: #999999 !important;
     }
 }
 .dropdown:hover .dropdown-submenu {
@@ -170,7 +170,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 0px 0px 0px 0px;
 }
 .dropdown-submenu a {
-    color: #eeeeee;
+    color: #999999;
 }
 .dropdown-submenu a:hover {
     color: #865F38;
@@ -189,7 +189,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     list-style: none;
 }
 .dropdown-category a {
-    color: #eeeeee;
+    color: #999999;
 }
 .dropdown-category a:hover {
     color: #865F38;
@@ -210,12 +210,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-family: Helvetica;
 }
 .carousel-caption h3 {
-    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+    text-shadow: -1px 0 #323232, 0 1px #323232, 1px 0 #323232, 0 -1px #323232;
 }
 .carousel-caption a {
     text-decoration: none;
     color: #eeeeee;
-    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+    text-shadow: -1px 0 #323232, 0 1px #323232, 1px 0 #323232, 0 -1px #323232;
 }
 .carousel-caption a:hover {
     text-decoration: none;
@@ -228,7 +228,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 5px 5px 5px 5px;
     border: 2px solid #eeeeee;
     border-radius: 10px 10px 10px 10px;
-    text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+    text-shadow: -1px 0 #323232, 0 1px #323232, 1px 0 #323232, 0 -1px #323232;
 }
 .carousel-button:hover {
     color: #865F38;
@@ -277,6 +277,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .footer-menu li a {
     color: #eeeeee;
 }
+fieldset {
+    padding: 10px 15px 10px 15px !important;
+}
 .footer-products-legend {
     color: #eeeeee;
 }
@@ -324,4 +327,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 .footer-products-cells a:hover {
     color: #865F38;
+}
+#footer-info {
+    color: #eeeeee;
+    font-family: Helvetica;
+    width: 100%;
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #footer-info {
+        color: #eeeeee;
+        font-family: Helvetica;
+        width: 100%;
+        font-size: 2em;
+    }
 }
