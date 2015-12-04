@@ -32,5 +32,8 @@
     "jshint-stylish": "^2.1.0",
     "path": "^0.12.7",
     "wiredep": "^2.2.2"
+  },
+  "engines": {
+    "node": "5.0.0"
   }
 }

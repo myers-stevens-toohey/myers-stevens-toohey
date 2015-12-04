@@ -7,6 +7,11 @@ body {
     margin-bottom: 60px; /*Margin for bottom footer*/
     background: ghostwhite !important;
 }
+.aux-page-body{
+    padding: 60px 0px 0px 0px;
+    font-family: Helvetica;
+    color: #323232;
+}
 /****************** Navbar Collapse for Devices ************************/
 @media screen
 and (min-device-width: 320px)
