@@ -7,7 +7,7 @@ var jshint = require('gulp-jshint');
 var minHtml = require('gulp-minify-html');
 var minCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
-var wiredep = require('wiredep').stream;
+//var wiredep = require('wiredep').stream;
 var imagemin = require('imagemin');
 var imageminJpegtran = require('imagemin-jpegtran');
 
@@ -55,12 +55,12 @@ gulp.task('jshint', function() {
         .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('bower', function() {
-   return gulp.src('./src/index.html')
-       .pipe(wiredep({
-           directory: './bower_components/'
-       }))
-       .pipe(gulp.dest('./public/'));
-});
+//gulp.task('bower', function() {
+//   return gulp.src('./src/index.html')
+//       .pipe(wiredep({
+//           directory: './bower_components/'
+//       }))
+//       .pipe(gulp.dest('./public/'));
+//});
 
-gulp.task('default', ['minify-html', 'minify-css', 'uglify','jshint', 'watch', 'bower', 'start']);
+gulp.task('default', ['minify-html', 'minify-css', 'uglify','jshint', 'watch', 'start']);
