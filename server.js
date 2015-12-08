@@ -8,6 +8,8 @@ var path = require('path');
 
 //app.use('/', api);
 
+//app.set('port', (process.env.PORT || 5000));
+
 app.use(function(req, res, next) {
     console.log(req.url);
     next()
@@ -23,7 +25,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/index.html'));
 });
 
-var server = app.listen(3000, function() {
+var server = app.listen(process.env.PORT || 5000, function() {
     console.log('Server is running at http://localhost:' +
     server.address().port);
 });
