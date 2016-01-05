@@ -1,0 +1,333 @@
+body { color:#000000; font-family:'Open Sans', sans-serif; }
+
+/* Text Selection */
+
+::-moz-selection { background: #267795; /* Firefox */ }
+::selection { background: #267795; /* Safari */ }
+
+
+/* Anchor */
+
+a{ color:#120f42; }
+a:hover{ color:#333333; }
+
+
+/* Block quote */
+
+blockquote{ color:#8d744b; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6{ font-family:'Open Sans', sans-serif; }
+
+
+/* Navigation */
+
+header .navigation { font-family:'Open Sans', sans-serif; }
+
+
+.button2,
+form input[type="submit"]{
+    border:1px solid #48aec5;
+    color:#48aec5;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:active,
+.button2:hover{
+    background-color:#48aec5;
+}
+
+.button1{
+    background-color:#48aec5;
+}
+
+.color-accent-background
+{
+    background-color:#48aec5;
+}
+
+.color-accent-foreground
+{
+    color:#48aec5;
+}
+
+.search-form form{
+    border:1px solid #48aec5;
+}
+
+.search-form input[type="submit"]{
+    background-color:#48aec5;
+}
+
+.search-form input[type="submit"]:hover{
+    background-color:#83b9c5;
+}
+
+header .navigation-button:hover{
+    color: #48aec5;
+}
+
+header .navigation > ul > li:hover > a{
+    border:1px solid #48aec5;
+    color:#48aec5;
+}
+
+header .navigation > ul > li.current-menu-item > a,
+header .navigation > ul > li.current-menu-ancestor > a{
+    background-color: #48aec5;
+    color:#FFF;
+}
+
+header .navigation li li:hover{
+    background-color: #48aec5;
+}
+
+header #menu-item-search > a{
+    border-left: 1px solid #48aec5;
+}
+
+header #menu-item-search:hover a{
+    color:#48aec5;
+}
+
+#page-title{
+    background-color:#48aec5;
+}
+
+.widget-area .widget-title{
+    color:#48aec5;
+}
+
+.widget-area a:hover{
+    color:#48aec5;
+}
+
+.widget-area .search-form input[type="submit"]{
+    background-color:#48aec5;
+}
+
+.tagcloud a:hover{
+    color:#48aec5;
+}
+
+.widget_bj_testimonials .name{
+    color: #48aec5;
+}
+
+#footer-bottom a:hover
+{
+    color:#48aec5;
+}
+
+footer .social-icons span:hover
+{
+    color: #48aec5;
+}
+
+footer .widget-area hr{
+    background-color: #48aec5;
+}
+
+footer .widget_tag_cloud a:hover{
+    background-color: #48aec5;
+    border:1px solid #48aec5;
+}
+
+.footer-widgets .wpcf7 input[type="submit"]:hover{
+    background-color: #48aec5;
+}
+
+.iconbox.iconbox-hex:hover .icon{
+    background-color: #48aec5;
+}
+
+.iconbox.iconbox-circle:hover .icon{
+    border:1px solid #48aec5;
+}
+
+.iconbox .glyph{
+    color: #48aec5;
+}
+
+.iconbox.iconbox-circle:hover .glyph,
+.iconbox.iconbox-hex:hover .glyph{
+    color:#48aec5;
+}
+
+.iconbox:hover .title{
+    color:#48aec5;
+}
+
+.iconbox .more-link a:hover{
+    color: #48aec5;
+}
+
+.portfolio-list .item-meta a{
+    color: #48aec5;
+}
+
+.portfolio-style1 .item-image-overlay
+{
+    background-color: #48aec5;
+  background-color: rgba(72, 174, 197, .7); 
+}
+
+.portfolio-style1 .item-icon:hover{
+    color: #48aec5;
+}
+
+.portfolio-style2 .item-image-overlay
+{
+    background-color: #48aec5;
+    background-color: rgba(72, 174, 197, .3);
+}
+
+.portfolio-style2 .item-icon:hover
+{
+    background: #48aec5;
+}
+
+.portfolio-list .filter .current
+{
+    border-top:1px solid #48aec5;
+    border-bottom:1px solid #48aec5;
+    border-left:1px solid #48aec5;
+    background-color: #48aec5;
+}
+
+.portfolio-list .filter .current:last-child
+{
+    border-right:1px solid #48aec5;
+}
+
+.team-member .name a{
+    color:#48aec5;
+}
+
+.team-member .image-overlay-wrap
+{
+    background-color: #48aec5; 
+  background-color: rgba(72, 174, 197, .8); 
+}
+
+.team-member .icons a:hover{
+    color:#48aec5;
+}
+
+.progressbar .progress{
+  background-color:#abc0c5; 
+}
+
+.progressbar .progress-inner{
+    background-color: #48aec5;
+}
+
+.accordion .header:hover .title,
+.toggle .header:hover .title,
+.accordion .header:hover .tab-button,
+.toggle .header:hover .tab-button{
+    color:#48aec5;
+}
+
+.post-slider .slider-nav{
+    border:1px solid #48aec5;
+}
+
+.post-slider .nav-separator{
+    background-color: #48aec5;
+}
+
+.post-slider .nav-prev,
+.post-slider .nav-next{
+    background-color:#48aec5;
+}
+
+.post-slider .format-quote .item-media{
+    background-color: #48aec5;
+}
+
+.post-slider .media-date{
+    background-color: #48aec5;
+}
+
+.horizontal-tab .titles .current{
+    color:#48aec5;
+}
+
+.horizontal-tab .titles .current .pointer
+{
+    border-color: #48aec5;
+}
+
+.tabs .head .current,
+.tabs .head li:hover{
+    color:#48aec5;
+}
+
+.tabs .head .current{
+    border-bottom: 2px solid #48aec5;
+}
+
+.portfolio-related .overlay hr{
+    background-color: #48aec5;
+}
+
+.archive .comments-link,
+.blog .comments-link{
+    color: #48aec5;
+    background-color: #48aec5;
+}
+
+.post.format-quote blockquote{
+    color: #48aec5;
+    border:1px solid #48aec5;
+}
+
+.post .post-title{
+    color: #48aec5;
+}
+
+.post-pagination a:hover,
+.post-pagination .this-page
+{
+    background-color: #48aec5;
+    border-color: #48aec5;
+}
+
+.comments-list .comment-reply-link:hover
+{ 
+    background-color: #48aec5;
+}
+
+#commentform input[type="submit"]{
+    
+    border:1px solid #48aec5;
+    color:#48aec5;
+}
+
+#commentform input[type="submit"]:hover{
+    background-color:#48aec5;
+}
+
+.search-item .count{    
+    color: #48aec5;
+}
+
+/*==== Style Overrides ====*/
+
+body {
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+footer .widget_nav_menu a:hover {
+    background-color: transparent ;
+    padding-left: 0px;
+}
+footer .widget-area li {
+    border-bottom: 0px solid #aeaeae;
+}
+.widget-area li {
+  padding: 0px 0;
+

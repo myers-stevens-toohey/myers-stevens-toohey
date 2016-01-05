@@ -129,10 +129,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
 #mst-text {
     display: block;
     width: 310px;
-    color: #999999;
+    color: #BCC6CC;
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#mst-text:hover {
+    display: block;
+    width: 310px;
+    color: #865F38;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media only screen
 and (min-device-width: 320px)
@@ -141,7 +151,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     #mst-text {
         display: block;
         width: 310px;
-        color: #999999;
+        color: #BCC6CC;
         font-weight: bold;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -151,8 +161,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .menu-button {
     font-size: 16px;
     font-weight: bold;
-    color: #b2b2b2 !important;
+    color: #BCC6CC !important;
     padding: 15px 20px 15px 20px !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .menu-button:hover {
     font-size: 16px;
@@ -166,7 +177,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .menu-button {
         font-size: 20px;
         font-weight: bold;
-        color: #999999 !important;
+        color: #BCC6CC !important;
     }
 }
 .dropdown:hover .dropdown-submenu {
@@ -175,7 +186,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 0px 0px 0px 0px;
 }
 .dropdown-submenu a {
-    color: #999999;
+    color: #BCC6CC;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .dropdown-submenu a:hover {
     color: #865F38;
@@ -194,7 +206,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     list-style: none;
 }
 .dropdown-category a {
-    color: #999999;
+    color: #BCC6CC;
 }
 .dropdown-category a:hover {
     color: #865F38;
@@ -253,16 +265,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-bottom: 15px;
 }
 .sticky-menu-button {
-    font-size: 20px !important;
+    font-size: 18px !important;
     text-decoration: none;
     color: #262626;
 }
 .sticky-menu-icon {
-
+    max-width: 50px;
+    max-height: auto;
 }
 /*************************** Jumbotrons ***************************/
 .jumbotron {
-    margin: 10px 0px 10px 0px !important;
+    margin: 55px 0px 10px 0px !important;
     background-color: ghostwhite !important;
 }
 /*************************** Footer ***************************/
@@ -329,6 +342,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: table-cell;
     padding: 0px 5px 0px 5px;
     text-decoration: underline;
+}
+.footer-products-header a {
+    table-layout: fixed;
+    text-decoration: none;
+    color: #eeeeee;
+    padding: 0px 0px 0px 0px;
+    display: table;
+    width: 100%;
 }
 .footer-products-cells {
     table-layout: fixed;

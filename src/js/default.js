@@ -11,6 +11,7 @@ $(document).on('click',function(e){
     }
 });
 
+// Sticky mid menu
 $(function(){
     // Check the initial Poistion of the Sticky Header
     var stickyHeaderTop = $('#stickyheader').offset().top;
